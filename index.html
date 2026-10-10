@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo 2 | Prótesis Robóticas Accesibles</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            light: '#4fd1c5',
+                            DEFAULT: '#319795',
+                            dark: '#285e61',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <div class="w-10 h-10 bg-brand text-white rounded-lg flex items-center justify-center text-xl shadow-lg">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <span class="font-bold text-2xl text-gray-900 tracking-tight">Bio<span class="text-brand">Mec</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#problema" class="text-gray-600 hover:text-brand font-medium transition-colors">El Problema</a>
+                    <a href="#solucion" class="text-gray-600 hover:text-brand font-medium transition-colors">Tecnología</a>
+                    <a href="#ods" class="text-gray-600 hover:text-brand font-medium transition-colors">Impacto ODS</a>
+                    <a href="#negocios" class="text-gray-600 hover:text-brand font-medium transition-colors">Plan de Negocios</a>
+                    <a href="#equipo" class="bg-brand text-white px-5 py-2 rounded-full font-medium hover:bg-brand-dark transition-colors shadow-md">Conoce al Equipo 2</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden gradient-bg">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-brand/20 text-brand-light font-semibold text-sm mb-6 border border-brand/30">
+                Desarrollo Tecnológico Hecho en México
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
+                Prótesis Robóticas Accesibles <br class="hidden md:block"/>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-light to-blue-400">Controladas por tu Mente</span>
+            </h1>
+            <p class="mt-4 text-xl text-gray-300 max-w-3xl mx-auto mb-10 font-light leading-relaxed">
+                Democratizamos el acceso a tecnología médica avanzada. Diseñamos un brazo protésico de bajo costo que responde a las señales eléctricas de los músculos, devolviendo independencia a quienes más lo necesitan.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#solucion" class="bg-brand text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-brand-light transition-all shadow-[0_0_20px_rgba(49,151,149,0.4)]">
+                    Descubre cómo funciona
+                </a>
+                <a href="#negocios" class="bg-white/10 text-white border border-white/20 px-8 py-3 rounded-full font-semibold text-lg hover:bg-white/20 transition-all backdrop-blur-sm">
+                    Ver Plan de Negocios
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="problema" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-brand font-semibold tracking-wide uppercase text-sm mb-2">El Problema</h2>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-6">La barrera económica de la movilidad</h3>
+                    <p class="text-gray-600 text-lg mb-4 leading-relaxed">
+                        En México, miles de personas se enfrentan a la pérdida de una extremidad superior a causa de accidentes, enfermedades (como complicaciones por diabetes) o condiciones congénitas. La pérdida de un brazo no solo afecta físicamente, sino que representa un golpe devastador a la independencia, salud mental y oportunidades laborales.
+                    </p>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                        Actualmente, la tecnología para suplir esta necesidad existe, pero las <strong>prótesis biónicas avanzadas son importadas y tienen costos exorbitantes</strong>. Esto crea una brecha inmensa donde solo una pequeña élite puede acceder a soluciones que mejoren su calidad de vida, dejando a la mayoría sin opciones funcionales viables.
+                    </p>
+                    <div class="flex items-center gap-4 p-4 bg-red-50 rounded-xl border-l-4 border-red-500">
+                        <i class="fa-solid fa-triangle-exclamation text-red-500 text-2xl"></i>
+                        <p class="text-red-800 font-medium text-sm">
+                            La falta de acceso a prótesis funcionales perpetúa la desigualdad y dificulta la reintegración al mercado laboral.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-brand to-blue-500 rounded-3xl transform rotate-3 opacity-20"></div>
+                    <img src="https://placehold.co/600x400/eeeeee/319795?text=Desigualdad+en+Salud" alt="Problema de acceso a prótesis" class="relative rounded-3xl shadow-xl w-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solucion" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-brand font-semibold tracking-wide uppercase text-sm mb-2">Nuestra Solución</h2>
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">Ingeniería Biomédica de Bajo Costo</h3>
+                <p class="text-gray-600 text-lg">
+                    Hemos desarrollado un prototipo de brazo protésico que captura la intención de movimiento del usuario directamente desde sus músculos, utilizando componentes accesibles y fabricación local.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Tech Feature 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-wave-square"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Sensores EMG</h4>
+                    <p class="text-gray-600 text-sm">
+                        Electromiografía (EMG) aplicada en la piel. Estos sensores (costo aprox. $211 MXN) detectan los impulsos eléctricos residuales generados por la contracción muscular del muñón.
+                    </p>
+                </div>
+
+                <!-- Tech Feature 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
+                    <div class="w-14 h-14 bg-green-100 text-green-600 rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Cerebro Arduino</h4>
+                    <p class="text-gray-600 text-sm">
+                        Un microprocesador de bajo costo ($150 MXN) actúa como el receptor y procesador de señal, traduciendo los impulsos eléctricos humanos en comandos digitales precisos en milisegundos.
+                    </p>
+                </div>
+
+                <!-- Tech Feature 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
+                    <div class="w-14 h-14 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-cogs"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Actuadores y Tendones</h4>
+                    <p class="text-gray-600 text-sm">
+                        Servomotores estratégicamente ubicados tiran de un sistema de "hilos blancos" de alta tensión que recorren la mano mecánica, simulando a la perfección el sistema de tendones humanos.
+                    </p>
+                </div>
+
+                <!-- Tech Feature 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
+                    <div class="w-14 h-14 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-cubes"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Esqueleto 3D</h4>
+                    <p class="text-gray-600 text-sm">
+                        Toda la estructura (brazo y mano) es modelada e impresa en 3D (PLA/PETG). Esto permite un diseño ligero, resistente y, lo más importante, <strong>personalizable a la anatomía de cada individuo</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ods" class="py-20 bg-brand text-white overflow-hidden relative">
+        <div class="absolute -right-20 -top-20 opacity-10">
+            <i class="fa-solid fa-globe text-[300px]"></i>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://placehold.co/400x400/e11d48/ffffff?text=ODS+10\nReduccion+de+Desigualdades" alt="ODS 10" class="rounded-2xl shadow-2xl mx-auto w-3/4 max-w-sm">
+                </div>
+                <div>
+                    <div class="inline-block bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm font-semibold mb-6">
+                        Impacto Social
+                    </div>
+                    <h3 class="text-4xl font-bold mb-6">Comprometidos con el ODS 10</h3>
+                    <h4 class="text-2xl font-medium mb-4 text-brand-light">Reducción de las Desigualdades</h4>
+                    <p class="text-lg text-white/90 leading-relaxed mb-6">
+                        Nuestro proyecto nace con un fuerte componente social arraigado en los <strong>Objetivos de Desarrollo Sostenible de la ONU</strong>. Creemos firmemente que el acceso a la salud y a la tecnología para recuperar capacidades físicas no debe ser un privilegio de clase.
+                    </p>
+                    <p class="text-lg text-white/90 leading-relaxed mb-8">
+                        Al desarrollar una prótesis funcional, de producción nacional y a un costo fraccionario del valor de mercado internacional, estamos <strong>emparejando el terreno de juego</strong>. Permitimos que personas vulnerables recuperen su autonomía, mejorando sus posibilidades de empleo e integración social.
+                    </p>
+                    <div class="flex gap-4">
+                        <span class="bg-white text-brand px-4 py-2 rounded-lg font-bold text-sm shadow-md">#Inclusión</span>
+                        <span class="bg-white text-brand px-4 py-2 rounded-lg font-bold text-sm shadow-md">#TecnologíaConPropósito</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="negocios" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-brand font-semibold tracking-wide uppercase text-sm mb-2">Estrategia y Viabilidad</h2>
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">Plan de Negocios (Modelo Canvas)</h3>
+                <p class="text-gray-600 text-lg">
+                    Diseñamos un modelo de negocio sostenible, enfocado en maximizar el impacto social mientras mantenemos la viabilidad financiera mediante alianzas estratégicas y bajos costos operativos.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Propuesta de Valor -->
+                <div class="bg-gray-50 rounded-2xl p-6 border-t-4 border-blue-500 shadow-sm col-span-1 md:col-span-2 lg:col-span-1">
+                    <h4 class="font-bold text-xl mb-4 flex items-center gap-2"><i class="fa-solid fa-gem text-blue-500"></i> Propuesta de Valor</h4>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Prótesis controlada por señales musculares (EMG) reales.</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Radicalmente más barata que opciones importadas.</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Diseño ajustable y personalizado a la anatomía del usuario.</li>
+                    </ul>
+                </div>
+
+                <!-- Segmentos de Mercado -->
+                <div class="bg-gray-50 rounded-2xl p-6 border-t-4 border-red-500 shadow-sm">
+                    <h4 class="font-bold text-xl mb-4 flex items-center gap-2"><i class="fa-solid fa-users text-red-500"></i> Segmentos de Mercado</h4>
+                    <p class="text-gray-600 text-sm mb-2">Personas que sufrieron la pérdida de un brazo (accidente, enfermedad, amputaciones programadas).</p>
+                    <p class="text-gray-600 text-sm font-semibold text-red-600">Enfoque principal: Sectores de la población que no pueden pagar una prótesis de alto costo tradicional.</p>
+                </div>
+
+                <!-- Relación y Canales -->
+                <div class="bg-gray-50 rounded-2xl p-6 border-t-4 border-yellow-500 shadow-sm">
+                    <h4 class="font-bold text-xl mb-4 flex items-center gap-2"><i class="fa-solid fa-handshake text-yellow-500"></i> Relación y Distribución</h4>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li><strong>Distribución:</strong> Principalmente enfocada en México.</li>
+                        <li><strong>Relación cercana:</strong> Asistencia en la adaptación a la prótesis, monitoreo de fallos, soporte técnico y ciclo de feedback continuo para mejorar diseños.</li>
+                    </ul>
+                </div>
+
+                <!-- Actividades y Recursos Clave -->
+                <div class="bg-gray-50 rounded-2xl p-6 border-t-4 border-green-500 shadow-sm col-span-1 md:col-span-2">
+                    <h4 class="font-bold text-xl mb-4 flex items-center gap-2"><i class="fa-solid fa-key text-green-500"></i> Actividades y Recursos Clave</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <span class="font-semibold text-gray-800 text-sm block mb-1">Actividades:</span>
+                            <ul class="list-disc pl-5 text-gray-600 text-sm space-y-1">
+                                <li>Diseño y manufactura del brazo (Impresión 3D).</li>
+                                <li>Programación de microcontroladores y sensores EMG.</li>
+                                <li>Pruebas de usuario e iteración del producto.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <span class="font-semibold text-gray-800 text-sm block mb-1">Recursos:</span>
+                            <ul class="list-disc pl-5 text-gray-600 text-sm space-y-1">
+                                <li>Tecnología y métodos de producción de <strong>bajo precio</strong>.</li>
+                                <li>Talento humano (ingeniería local).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Socios Clave -->
+                <div class="bg-gray-50 rounded-2xl p-6 border-t-4 border-purple-500 shadow-sm">
+                    <h4 class="font-bold text-xl mb-4 flex items-center gap-2"><i class="fa-solid fa-network-wired text-purple-500"></i> Socios Clave</h4>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li><i class="fa-solid fa-microchip w-5"></i> Proveedores de componentes electrónicos y sensores.</li>
+                        <li><i class="fa-solid fa-university w-5"></i> Universidades (Asesores y profesores).</li>
+                        <li><i class="fa-solid fa-hospital-user w-5"></i> Centros de rehabilitación física.</li>
+                        <li><i class="fa-solid fa-hands-holding-heart w-5"></i> Fundaciones de apoyo social.</li>
+                    </ul>
+                </div>
+
+                <!-- Estructura de Costes y Finanzas (Full width) -->
+                <div class="bg-gray-900 text-white rounded-2xl p-6 shadow-xl col-span-1 md:col-span-2 lg:col-span-3 mt-4">
+                    <h4 class="font-bold text-2xl mb-6 flex items-center gap-2 text-brand-light"><i class="fa-solid fa-chart-pie"></i> Proyección Financiera y Costos</h4>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h5 class="text-lg font-semibold mb-3 border-b border-gray-700 pb-2">Estructura de Costes (Por Unidad Prototipo)</h5>
+                            <div class="grid grid-cols-2 gap-2 text-sm text-gray-300">
+                                <span>• Arduino:</span> <span class="text-right">$150 MXN</span>
+                                <span>• Baterías:</span> <span class="text-right">$40 MXN</span>
+                                <span>• Cables:</span> <span class="text-right">$196 MXN</span>
+                                <span>• Servomotores:</span> <span class="text-right">$179 MXN</span>
+                                <span>• Sensores EMG:</span> <span class="text-right">$211 MXN</span>
+                                <span>• Boquilla/Varios:</span> <span class="text-right">$660 MXN</span>
+                                <span class="pt-2 text-white">Subtotal Materiales:</span> <span class="pt-2 text-right text-white font-bold">$1,436 MXN</span>
+                                <span class="text-gray-400 italic">+ Filamento 3D, Hilos, Modelo</span> <span class="text-right text-gray-400 italic">Variables</span>
+                            </div>
+                            <div class="mt-4 bg-brand-dark/50 p-3 rounded-lg border border-brand/30 flex justify-between items-center">
+                                <span class="font-bold text-brand-light">Costo Total Estimado <br><span class="text-xs font-normal">(Incluye 200% Fondo Emergencia)</span></span>
+                                <span class="text-2xl font-bold text-white">~$1,622 MXN</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center">
+                            <h5 class="text-lg font-semibold mb-3 border-b border-gray-700 pb-2">Modelo de Ingresos y Financiamiento</h5>
+                            <ul class="space-y-4">
+                                <li class="flex items-start gap-3">
+                                    <div class="mt-1 text-brand-light"><i class="fa-solid fa-seedling"></i></div>
+                                    <div>
+                                        <strong class="block text-white">Fase 1: Bootstraping</strong>
+                                        <span class="text-gray-400 text-sm">Operación inicial respaldada mediante financiamiento personal del equipo desarrollador.</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <div class="mt-1 text-brand-light"><i class="fa-solid fa-rocket"></i></div>
+                                    <div>
+                                        <strong class="block text-white">Fase 2: Levantamiento de Capital</strong>
+                                        <span class="text-gray-400 text-sm">Búsqueda activa de financiamiento de marcas referentes tecnológicas y/o subsidios gubernamentales (Convocatorias de innovación).</span>
+                                    </div>
+                                </li>
+                                <li class="bg-gray-800 p-3 rounded-lg border border-gray-700 mt-2">
+                                    <span class="block text-sm text-gray-400">Tarifa / Meta de Fondeo Proyectada:</span>
+                                    <span class="text-2xl font-bold text-green-400">$693,500 MXN</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipo" class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-brand font-semibold tracking-wide uppercase text-sm mb-2">Mentes Detrás del Proyecto</h2>
+                <h3 class="text-3xl font-bold text-gray-900">Equipo 2</h3>
+                <p class="text-gray-600 mt-4">Un grupo multidisciplinario apasionado por la tecnología aplicada y la responsabilidad social.</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-8">
+                <!-- Team Member -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm text-center w-48 border border-gray-100 card-hover">
+                    <div class="w-20 h-20 bg-gradient-to-br from-brand-light to-brand rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl shadow-inner">
+                        <i class="fa-solid fa-user-astronaut"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900">Diego Isaac</h4>
+                </div>
+                
+                <!-- Team Member -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm text-center w-48 border border-gray-100 card-hover">
+                    <div class="w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl shadow-inner">
+                        <i class="fa-solid fa-user-gear"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900">Marcos David</h4>
+                </div>
+
+                <!-- Team Member -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm text-center w-48 border border-gray-100 card-hover">
+                    <div class="w-20 h-20 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl shadow-inner">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900">Rodrigo Trinidad</h4>
+                </div>
+
+                <!-- Team Member -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm text-center w-48 border border-gray-100 card-hover">
+                    <div class="w-20 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl shadow-inner">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900">Dylan Castro</h4>
+                </div>
+
+                <!-- Team Member -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm text-center w-48 border border-gray-100 card-hover">
+                    <div class="w-20 h-20 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl shadow-inner">
+                        <i class="fa-solid fa-user-ninja"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900">Josue Alejandro</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-brand text-white rounded flex items-center justify-center text-sm">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <span class="font-bold text-xl tracking-tight">Bio<span class="text-brand">Mec</span> | Equipo 2</span>
+            </div>
+            <p class="text-gray-400 text-sm text-center md:text-left">
+                Transformando vidas a través de la tecnología accesible. Proyecto enfocado en ODS 10.
+            </p>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-400 hover:text-brand-light transition-colors text-xl"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="text-gray-400 hover:text-brand-light transition-colors text-xl"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="text-gray-400 hover:text-brand-light transition-colors text-xl"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 text-center border-t border-gray-800 pt-8 text-gray-500 text-sm">
+            &copy; 2026 Equipo 2. Todos los derechos reservados. Basado en el modelo de negocios y prototipos presentados.
+        </div>
+    </footer>
+
+</body>
+</html>
